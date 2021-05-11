@@ -66,7 +66,7 @@ body {
 .Toolbar__user {
 	color: #d5d0ce;
 	margin-left: 4px;
-	font-size: 27px;
+	font-size: 1vmax;
 	line-height: 14px;
 	margin-bottom: 1px;
 }
@@ -76,7 +76,7 @@ body {
 	margin-top: -1px;
 	padding-top: 2px;
 	font-family: "Ubuntu mono";
-	font-size: 35px;
+	font-size: 2vmax;
 }
 .Terminal__text {
 	color: #ddd;

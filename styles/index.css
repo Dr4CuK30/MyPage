@@ -44,7 +44,7 @@ ul li {
 	border: 5px solid rgb(184, 0, 0);
 	color: white;
 	font-family: Exo;
-	font-size: 35px;
+	font-size: 2vmax;
 }
 .btn-personal:hover {
 	color: rgb(139, 139, 139);
