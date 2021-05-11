@@ -34,8 +34,12 @@ ul li {
 .line2 {
 	display: none !important;
 }
-.navbar {
+nav {
+	background-color: #040404;
 	height: 15vh;
+}
+ul {
+	background-color: #040404;
 }
 
 .btn-personal {
@@ -51,4 +55,11 @@ ul li {
 
 .icon {
 	width: 5vh;
+}
+
+@media (min-width: 991px) {
+	nav,
+	ul {
+		background-color: transparent !important;
+	}
 }
