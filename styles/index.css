@@ -19,7 +19,6 @@ body {
 }
 .navbar-brand {
 	font-family: MiFuentePersonal;
-	font-size: 47px;
 }
 .navbar-brand img {
 	margin-right: 5px;
@@ -48,4 +47,8 @@ ul li {
 }
 .btn-personal:hover {
 	color: rgb(139, 139, 139);
+}
+
+.icon {
+	width: 5vh;
 }
