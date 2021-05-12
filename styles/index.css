@@ -36,10 +36,11 @@ ul li {
 }
 nav {
 	background-color: #040404;
-	height: 15vh;
+	height: 10vh;
 }
 ul {
 	background-color: #040404;
+	margin-top: 00px;
 }
 
 .btn-personal {
@@ -58,8 +59,17 @@ ul {
 }
 
 @media (min-width: 991px) {
-	nav,
 	ul {
 		background-color: transparent !important;
+	}
+	nav {
+		transition-property: background-color;
+		transition-duration: 450ms;
+		background-color: rgba(0, 0, 0, 0.561);
+	}
+	nav:hover {
+		transition-property: background-color;
+		transition-duration: 450ms;
+		background-color: #040404 !important;
 	}
 }
