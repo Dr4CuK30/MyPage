@@ -64,6 +64,33 @@ ul {
 	border-bottom: 5px solid #c00000;
 }
 
+.caja{
+	-webkit-box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
+}
+
+.prog-red{
+	background: #c00000;
+}
+.progress{
+	height: 25px;
+	background: #ffffff;
+	margin-bottom: 20px
+}
+
+.prog-box .d-flex{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.btn-descarga{
+	background: #c00000;
+	color: white;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
 @media (min-width: 991px) {
 	ul {
 		background-color: transparent !important;
