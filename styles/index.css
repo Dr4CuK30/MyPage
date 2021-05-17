@@ -57,6 +57,12 @@ ul {
 .icon {
 	width: 5vh;
 }
+.subtitle{
+	font: 50px "Roboto Con", sans-serif;
+	color: #ffffff;
+	padding-bottom: 15px;
+	border-bottom: 5px solid #c00000;
+}
 
 @media (min-width: 991px) {
 	ul {
