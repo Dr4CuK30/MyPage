@@ -39,8 +39,7 @@ navitems = document.getElementsByClassName("nav-link")
 const closenav = () => {
     document.querySelector("#navbar-toggler").click()
 }
-window.addEventListener("resize", () => {
-    console.log(innerWidth)
+function setEvents(){
     if (window.innerWidth < 1200) {
         for (item of navitems) {
             item.addEventListener("click", closenav)
@@ -50,4 +49,8 @@ window.addEventListener("resize", () => {
             item.removeEventListener("click", closenav)
         }
     }
+}
+setEvents()
+window.addEventListener("resize", () => {
+    setEvents()
 })
