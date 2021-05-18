@@ -14,8 +14,6 @@ body {
 }
 .nav-item {
 	margin-left: 5vh;
-	margin-top: 2vh;
-	margin-bottom: 2vh;
 }
 .navbar-brand {
 	font-family: MiFuentePersonal;
@@ -36,7 +34,6 @@ ul li {
 }
 nav {
 	background-color: #040404;
-	height: 10vh;
 }
 ul {
 	background-color: #040404;
@@ -89,6 +86,13 @@ ul {
 	font-size: 25px;
 	margin-top: 20px;
 	margin-bottom: 30px;
+}
+.fixed-top{
+	height: 100px;
+}
+
+.posscroll{
+	margin-top: 141px;
 }
 
 @media (min-width: 991px) {

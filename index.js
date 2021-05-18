@@ -22,3 +22,16 @@ var typed = new Typed("#typed", options);
 particlesJS.load("particles-js", "assets/particles.json", function () {
 	console.log("callback - particles-js config loaded");
 });
+
+window.addEventListener("scroll", ()=>{
+	const nav = document.querySelector("#navbar-p")
+	const ter = document.querySelector(".containerT")
+	if(window.scrollY>670){
+		nav.classList.add("fixed-top")
+		ter.classList.add("posscroll")
+	}
+	else{
+		nav.classList.remove("fixed-top")
+		ter.classList.remove("posscroll")
+	}
+})

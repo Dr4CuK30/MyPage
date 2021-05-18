@@ -21,7 +21,7 @@
 <div id="particles-js"></div>
 <!-------------- HEADER --------------->
 <header>
-    <nav class="navbar navbar-expand-xl navbar-dark">
+    <nav id="navbar-p" class="navbar navbar-expand-xl navbar-dark">
         <div class="container-fluid mx-2">
             <a class="navbar-brand fs-1" href="#">
                 <img src="./assets/Imágenes/icon.png" alt="David Saldarriaga"
@@ -44,10 +44,10 @@
                         <a class="nav-link py-4" href="#">INICIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-4" href="#">SOBRE MÍ</a>
+                        <a class="nav-link py-4" href="#sobremi">SOBRE MÍ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-4" href="#">HABILIDADES</a>
+                        <a class="nav-link py-4" href="#skills">HABILIDADES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link py-4" href="#">PROYECTOS</a>
@@ -92,9 +92,9 @@
     </div>
     <div class="row justify-content-center" style="margin-top: 150px;">
         <div class="col-12 text-center">
-            <h2 class="subtitle">SOBRE MÍ</h2>
+            <h2 class="subtitle" id="sobremi">SOBRE MÍ</h2>
         </div>
-        <div class="col-12 col-md-4 offset-lg-1 mt-4 caja">
+        <div class="col-12 col-lg-4 offset-lg-1 mt-4 caja">
             <div class="card text-white bg-dark" style="width: 100%;">
                 <img src="assets/Imágenes/FotoCV.jpeg" alt="David Saldarriaga" width="250"
                      class="mt-3 mx-auto rounded-circle">
@@ -118,7 +118,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-12 col-md-6 mt-4 bg-dark text-center align-self-center pt-3 caja">
+        <div class="col-12 col-lg-6 mt-4 bg-dark text-center align-self-center pt-3 caja">
             <p class="fs-2">
                 Soy un joven estudiante de ingenieria de sistemas, con gran pasión y habilidad para el desarrollo de software.
                 Soy una persona con capacidad y gusto por el aprendizaje, con la habilidad de adaptarme a
@@ -131,13 +131,13 @@
     </div>
     <div class="row" style="margin-top: 100px">
         <div class="col col-12 text-center">
-            <h2 class="subtitle">HABILIDADES</h2>
+            <h2 class="subtitle" id="skills">HABILIDADES</h2>
         </div>
     </div>
     <div class="row justify-content-center bg-dark p-5 mt-3 mb-5">
         <div class="col col-12 col-lg-6 prog-box">
             <div class="d-flex justify-content-between">
-                <h3>HTML</h3>
+                <h3><img src="assets/Imágenes/skills/html5.png" height="30">  HTML</h3>
                 <h3>75%</h3>
             </div>
             <div class="progress">
@@ -147,7 +147,7 @@
         </div>
         <div class="col col-12 col-lg-6 prog-box">
             <div class="d-flex justify-content-between">
-                <h3>CSS</h3>
+                <h3><img src="assets/Imágenes/skills/css.png" height="35">CSS</h3>
                 <h3>85%</h3>
             </div>
             <div class="progress">
@@ -157,7 +157,7 @@
         </div>
         <div class="col col-12 col-lg-6 prog-box">
             <div class="d-flex justify-content-between">
-                <h3>Javascript</h3>
+                <h3><img src="assets/Imágenes/skills/js.png" height="30"> Javascript</h3>
                 <h3>100%</h3>
             </div>
             <div class="progress">
@@ -167,7 +167,7 @@
         </div>
         <div class="col col-12 col-lg-6 prog-box">
             <div class="d-flex justify-content-between">
-                <h3>Angular</h3>
+                <h3><img src="assets/Imágenes/skills/angular.png" height="30"> Angular</h3>
                 <h3>95%</h3>
             </div>
             <div class="progress">
@@ -177,7 +177,7 @@
         </div>
         <div class="col col-12 col-lg-6 prog-box">
             <div class="d-flex justify-content-between">
-                <h3>Node.js</h3>
+                <h3><img src="assets/Imágenes/skills/node.png" height="35"> Node.js</h3>
                 <h3>85%</h3>
             </div>
             <div class="progress">
@@ -187,7 +187,7 @@
         </div>
         <div class="col col-12 col-lg-6 prog-box">
             <div class="d-flex justify-content-between">
-                <h3>Bootstrap</h3>
+                <h3><img src="assets/Imágenes/skills/bootstrap.png" height="30"> Bootstrap</h3>
                 <h3>90%</h3>
             </div>
             <div class="progress">
@@ -197,7 +197,7 @@
         </div>
         <div class="col col-12 col-lg-6 prog-box">
             <div class="d-flex justify-content-between">
-                <h3>Flutter</h3>
+                <h3><img src="assets/Imágenes/skills/flutter.png" height="30">Flutter</h3>
                 <h3>65%</h3>
             </div>
             <div class="progress">
@@ -207,7 +207,7 @@
         </div>
         <div class="col col-12 col-lg-6 prog-box">
             <div class="d-flex justify-content-between">
-                <h3>SQL & NoSQL</h3>
+                <h3><img src="assets/Imágenes/skills/bdd.png" height="30"> SQL & NoSQL</h3>
                 <h3>95%</h3>
             </div>
             <div class="progress">
@@ -217,7 +217,7 @@
         </div>
         <div class="col col-12 col-lg-6 prog-box">
             <div class="d-flex justify-content-between">
-                <h3>Flask</h3>
+                <h3><img src="assets/Imágenes/skills/flask.png" height="30"> Flask</h3>
                 <h3>60%</h3>
             </div>
             <div class="progress">
@@ -227,7 +227,7 @@
         </div>
         <div class="col col-12 col-lg-6 prog-box">
             <div class="d-flex justify-content-between">
-                <h3>Java</h3>
+                <h3><img src="assets/Imágenes/skills/java.png" height="35"> Java</h3>
                 <h3>75%</h3>
             </div>
             <div class="progress">
