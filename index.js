@@ -36,9 +36,18 @@ window.addEventListener("scroll", () => {
 })
 
 navitems = document.getElementsByClassName("nav-link")
-console.log(navitems.length)
-for(item of navitems){
-    item.addEventListener("click", () => {
-        document.querySelector("#navbar-toggler").click()
-    })
+const closenav = () => {
+    document.querySelector("#navbar-toggler").click()
 }
+window.addEventListener("resize", () => {
+    console.log(innerWidth)
+    if (window.innerWidth < 1200) {
+        for (item of navitems) {
+            item.addEventListener("click", closenav)
+        }
+    } else {
+        for (item of navitems) {
+            item.removeEventListener("click", closenav)
+        }
+    }
+})
