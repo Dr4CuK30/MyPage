@@ -23,7 +23,17 @@ particlesJS.load("particles-js", "assets/particles.json", function () {
     console.log("callback - particles-js config loaded");
 });
 
+const progress = document.querySelectorAll(".progress-bar")
 window.addEventListener("scroll", () => {
+    if(progress[0].getBoundingClientRect().top <=680){
+        for(prog of progress){
+            prog.style.width= prog.attributes[2].nodeValue + "%"
+        }
+    }else{
+        for(prog of progress){
+            prog.style.width="0%"
+        }
+    }
     const nav = document.querySelector("#navbar-p")
     const ter = document.querySelector(".containerT")
     if (window.scrollY > 670) {
@@ -39,7 +49,8 @@ navitems = document.getElementsByClassName("nav-link")
 const closenav = () => {
     document.querySelector("#navbar-toggler").click()
 }
-function setEvents(){
+
+function setEvents() {
     if (window.innerWidth < 1200) {
         for (item of navitems) {
             item.addEventListener("click", closenav)
@@ -50,6 +61,7 @@ function setEvents(){
         }
     }
 }
+
 setEvents()
 window.addEventListener("resize", () => {
     setEvents()
