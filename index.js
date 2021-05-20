@@ -3,7 +3,7 @@ var options2 = {
         `^500 <span class="Prompt__user">>></span> Web Developer 
          <div><span class="Prompt__user">>></span> Frontend Developer</div>
          <div><span class="Prompt__user">>></span> Backend Developer</div>
-         <div><span class="Prompt__user">>></span> Fullstack Developer</div>`,
+         <div><span class="Prompt__user">>></span> Fullstack Developer</div>^700`,
     ],
     loop: true,
     showCursor: false,
