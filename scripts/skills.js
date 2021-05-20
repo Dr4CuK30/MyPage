@@ -187,7 +187,7 @@ const generarobserver = () => {
     }
 }
 
-const htmlgenerator = (name, per, svg) => `<div class="col col-6 col-md-4 col-lg-3 prog-box">
+const htmlgenerator = (name, per, svg) => `<div class="col col-6 col-md-4 col-lg-3 py-4 prog-box">
             <div class="d-flex justify-content-center">
                 <h3 class="fs-4">${name}</h3>
             </div>
