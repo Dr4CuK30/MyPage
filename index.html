@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>David Saldarriaga</title>
-    <meta name="keywords" content="david, steven, saldarriaga, pardo,desarrollador, junior, web, backend, frontend, fullstack, david saldarriaga, david pardo, david steven saldarriaga">
+    <meta name="keywords"
+          content="david, steven, saldarriaga, pardo,desarrollador, junior, web, backend, frontend, fullstack, david saldarriaga, david pardo, david steven saldarriaga">
     <meta name="description"
           content="Desarrollador de Softwarfe apasionado por la programación web tanto en Frontend como Backend. Estudiante de Ingenieria de Sistemas">
     <meta name="author" content="David Steven Saldarriaga Pardo">
@@ -26,152 +27,161 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet"/>
     <link href="styles/terminal.css" rel="stylesheet"/>
+    <link href="styles/loading.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/Imágenes/icon.png">
 </head>
 <body>
+<div class="cargando">
+    <div class="lds-facebook">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
 <div id="particles-js"></div>
-<!-------------- HEADER --------------->
-<header>
-    <nav id="navbar-p" class="navbar navbar-expand-xl navbar-dark">
-        <div class="container-fluid mx-2">
-            <a class="navbar-brand fs-1" href="#">
-                <img src="./assets/Imágenes/icon.png" alt="David Saldarriaga"
-                     class="d-inline-block align-text-top icon">
-                David Saldarriaga</a>
-            <button
-                    id="navbar-toggler"
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav ms-auto fs-5 mt-4">
-                    <li class="nav-item">
-                        <a class="nav-link py-4" href="#">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-4" href="#sobremi">SOBRE MÍ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-4" href="#skills">HABILIDADES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-4" href="#">PROYECTOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-4" href="#">EXPERIENCIA</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-<!------------------------------------------------------------>
-<div class="container">
-    <div class="containerT">
-        <div class="Terminal">
-            <div class="Terminal__Toolbar">
-                <div class="Toolbar__buttons">
-                    <button class="Toolbar__button Toolbar__button--exit">&#10005;</button>
-                    <button class="Toolbar__button">&#9472;</button>
-                    <button class="Toolbar__button">&#9723;</button>
-                </div>
-                <p class="Toolbar__user">d4v1d@linux:~</p>
-            </div>
-            <div class="Terminal__body fs-3">
-                <div class="Terminal__Prompt">
-                    <span class="Prompt__user">d4v1d@linux:</span><span class="Prompt__location">~</span></span><p
-                        id="typed" class="Terminal__text"></p>
-                </div>
-                <div class="Terminal__Prompt line2">
-                    <p id="typed2" class="Terminal__text"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col text-center">
-            <a target="_blank"
-               href="https://api.whatsapp.com/send?phone=573115116064&text=Hola%20David,%20necesito%20tu%20ayuda"
-               class="btn btn-personal mx-3">Contactarme</a>
-        </div>
-    </div>
-    <div class="row justify-content-center" style="margin-top: 150px;">
-        <div class="col-12 text-center">
-            <h2 class="subtitle fs-1" id="sobremi">SOBRE MÍ</h2>
-        </div>
-        <div class="col-12 col-lg-4 offset-lg-1 mt-4 caja">
-            <div class="card text-white bg-dark animate__animated" style="width: 100%;">
-                <img src="assets/Imágenes/FotoCV.jpeg" alt="David Saldarriaga" width="250"
-                     class="mt-3 mx-auto rounded-circle">
-                <div class="card-body">
-                    <h5 class="card-title text-center fs-4 mt-2" style="font-weight: bold">David Steven Saldarriaga
-                        Pardo</h5>
-                </div>
-                <ul class="list-group list-group-flush my-2">
-                    <li class="list-group-item bg-dark text-light"><img src="./assets/Imágenes/location.png" width="30"
-                                                                        class="mx-2">Bogotá, Colombia<img
-                            src="./assets/Imágenes/colombia.png" width="25" class="mx-2"></li>
-                    <li class="list-group-item bg-dark text-light"><img src="./assets/Imágenes/baby.png" width="30"
-                                                                        class="mx-2">19 Años
-                    </li>
-                    <li class="list-group-item bg-dark text-light"><img src="assets/Imágenes/email.png" width="30"
-                                                                        class="mx-2">davidsaldarriaga.pardo@gmail.com
-                    </li>
-                    <li class="list-group-item bg-dark text-light"><img src="assets/Imágenes/phone.png" width="30"
-                                                                        class="mx-2">+57 3115116064
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-12 col-lg-6 mt-4 bg-dark text-center align-self-center pt-3 caja animate__animated"
-             id="message">
-            <p class="fs-2">
-                Soy un joven estudiante de ingeniería de sistemas, con gran pasión y habilidad para el desarrollo de
-                software.
-                Soy una persona con capacidad y gusto por el aprendizaje, con la habilidad de adaptarme a
-                cualquier circunstancia y dar siempre lo mejor de mí en cualquier proyecto.
-            </p>
-            <a target="_blank"
-               href="assets/CV/DavidSaldarriagaCV.pdf"
-               class="btn btn-descarga mx-3">Descargar CV</a>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 100px">
-        <div class="col col-12 text-center">
-            <h2 class="subtitle fs-1" id="skills">HABILIDADES</h2>
-        </div>
-    </div>
-    <div class="row justify-content-center mt-4">
-        <div class="col col-4 col-lg-2 px-0 text-center">
-            <a onclick="mostrarSkills('lenguajes')">
-                <button class="btn btn-skills">
-                    Lenguajes
+<div class="inv">
+    <header>
+        <nav id="navbar-p" class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid mx-2">
+                <a class="navbar-brand fs-1" href="#">
+                    <img src="./assets/Imágenes/icon.png" alt="David Saldarriaga"
+                         class="d-inline-block align-text-top icon">
+                    David Saldarriaga</a>
+                <button
+                        id="navbar-toggler"
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            </a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto fs-5 mt-4">
+                        <li class="nav-item">
+                            <a class="nav-link py-4" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-4" href="#sobremi">SOBRE MÍ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-4" href="#skills">HABILIDADES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-4" href="#">PROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-4" href="#">EXPERIENCIA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="containerT">
+            <div class="Terminal">
+                <div class="Terminal__Toolbar">
+                    <div class="Toolbar__buttons">
+                        <button class="Toolbar__button Toolbar__button--exit">&#10005;</button>
+                        <button class="Toolbar__button">&#9472;</button>
+                        <button class="Toolbar__button">&#9723;</button>
+                    </div>
+                    <p class="Toolbar__user">d4v1d@linux:~</p>
+                </div>
+                <div class="Terminal__body fs-3">
+                    <div class="Terminal__Prompt">
+                        <span class="Prompt__user">d4v1d@linux:</span><span class="Prompt__location">~</span></span><p
+                            id="typed" class="Terminal__text"></p>
+                    </div>
+                    <div class="Terminal__Prompt line2">
+                        <p id="typed2" class="Terminal__text"></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col col-4 col-lg-2 px-0 text-center">
-            <a onclick="mostrarSkills('frameworks')">
-                <button class="btn btn-skills">
-                    Frameworks
-                </button>
-            </a>
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <a target="_blank"
+                   href="https://api.whatsapp.com/send?phone=573115116064&text=Hola%20David,%20necesito%20tu%20ayuda"
+                   class="btn btn-personal mx-3">Contactarme</a>
+            </div>
         </div>
-        <div class="col col-4 col-lg-2 px-0 text-center">
-            <a onclick="mostrarSkills('tecnologias')">
-                <button class="btn btn-skills">
-                    Tecnologias
-                </button>
-            </a>
+        <div class="row justify-content-center" style="margin-top: 150px;">
+            <div class="col-12 text-center">
+                <h2 class="subtitle fs-1" id="sobremi">SOBRE MÍ</h2>
+            </div>
+            <div class="col-12 col-lg-4 offset-lg-1 mt-4 caja">
+                <div class="card text-white bg-dark animate__animated" style="width: 100%;">
+                    <img src="assets/Imágenes/FotoCV.jpeg" alt="david saldarriaga" width="250"
+                         class="mt-3 mx-auto rounded-circle">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fs-4 mt-2" style="font-weight: bold">David Steven Saldarriaga
+                            Pardo</h5>
+                    </div>
+                    <ul class="list-group list-group-flush my-2">
+                        <li class="list-group-item bg-dark text-light"><img src="./assets/Imágenes/location.png"
+                                                                            width="30"
+                                                                            class="mx-2">Bogotá, Colombia<img
+                                src="./assets/Imágenes/colombia.png" width="25" class="mx-2"></li>
+                        <li class="list-group-item bg-dark text-light"><img src="./assets/Imágenes/baby.png" width="30"
+                                                                            class="mx-2">19 Años
+                        </li>
+                        <li class="list-group-item bg-dark text-light"><img src="assets/Imágenes/email.png" width="30"
+                                                                            class="mx-2">davidsaldarriaga.pardo@gmail.com
+                        </li>
+                        <li class="list-group-item bg-dark text-light"><img src="assets/Imágenes/phone.png" width="30"
+                                                                            class="mx-2">+57 3115116064
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-4 bg-dark text-center align-self-center pt-3 caja animate__animated"
+                 id="message">
+                <p class="fs-2">
+                    Soy un joven estudiante de ingeniería de sistemas, con gran pasión y habilidad para el desarrollo de
+                    software.
+                    Soy una persona con capacidad y gusto por el aprendizaje, con la habilidad de adaptarme a
+                    cualquier circunstancia y dar siempre lo mejor de mí en cualquier proyecto.
+                </p>
+                <a target="_blank"
+                   href="assets/CV/DavidSaldarriagaCV.pdf"
+                   class="btn btn-descarga mx-3">Descargar CV</a>
+            </div>
         </div>
-    </div>
-    <div class="row justify-content-center bg-dark px-3 mb-5 pt-4" id="skillsx">
+        <div class="row" style="margin-top: 100px">
+            <div class="col col-12 text-center">
+                <h2 class="subtitle fs-1" id="skills">HABILIDADES</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col col-4 col-lg-2 px-0 text-center">
+                <a onclick="mostrarSkills('lenguajes')">
+                    <button class="btn btn-skills">
+                        Lenguajes
+                    </button>
+                </a>
+            </div>
+            <div class="col col-4 col-lg-2 px-0 text-center">
+                <a onclick="mostrarSkills('frameworks')">
+                    <button class="btn btn-skills">
+                        Frameworks
+                    </button>
+                </a>
+            </div>
+            <div class="col col-4 col-lg-2 px-0 text-center">
+                <a onclick="mostrarSkills('tecnologias')">
+                    <button class="btn btn-skills">
+                        Tecnologias
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="row justify-content-center bg-dark px-3 mb-5 pt-4" id="skillsx">
+        </div>
     </div>
 </div>
 <script src="scripts/skills.js"></script>

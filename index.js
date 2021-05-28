@@ -1,3 +1,10 @@
+window.addEventListener('load', () => {
+    setTimeout(()=>{
+        document.querySelector(".inv").classList.remove("inv")
+        document.querySelector(".cargando").classList.add("inv")
+    },1500)
+})
+
 var options2 = {
     strings: [
         `^500 <span class="Prompt__user">>></span> Web Developer 
