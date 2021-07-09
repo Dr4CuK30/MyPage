@@ -26,6 +26,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/glide.core.min.css">
+    <link rel="stylesheet" href="styles/glide.theme.min.css">
     <link href="styles/terminal.css" rel="stylesheet"/>
     <link href="styles/loading.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/Imágenes/icon.png">
@@ -43,7 +45,7 @@
     <header>
         <nav id="navbar-p" class="navbar navbar-expand-xl navbar-dark">
             <div class="container-fluid mx-2">
-                <a class="navbar-brand fs-1" href="#">
+                <a class="navbar-brand fs-3" href="#">
                     <img src="./assets/Imágenes/icon.png" alt="David Saldarriaga"
                          class="d-inline-block align-text-top icon">
                     David Saldarriaga</a>
@@ -71,7 +73,7 @@
                             <a class="nav-link py-4" href="#skills">HABILIDADES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link py-4" href="#">EDUCACIÓN</a>
+                            <a class="nav-link py-4" href="#educacion">EDUCACIÓN</a>
                         </li>
                     </ul>
                 </div>
@@ -136,7 +138,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mt-4 bg-dark text-center align-self-center pt-3 caja animate__animated"
+            <div class="col-12 col-lg-6 mt-4 bg-p text-center align-self-center pt-3 caja animate__animated"
                  id="message">
                 <p class="fs-2">
                     Soy un joven estudiante de ingeniería de sistemas, con gran pasión y habilidad para el desarrollo de
@@ -177,18 +179,36 @@
                 </a>
             </div>
         </div>
-        <div class="row justify-content-center bg-dark px-3 mb-5 pt-4" id="skillsx">
+        <div class="row justify-content-center bg-p px-3 mb-5 pt-4" id="skillsx">
+        </div>
+        <!---------------------------------------- ESTUDIOS -------------------------------------------------->
+        <div class="row" style="margin-top: 100px">
+            <div class="col col-12 text-center">
+                <h2 class="subtitle fs-1" id="educacion" >EDUCACIÓN</h2>
+            </div>
+        </div>
+        <div class="row mt-5 mx-2"></div>
+            <div class="glide multi1">
+                <div class="glide__track" data-glide-el="track">
+                    <ul id="estudios" class="glide__slides">
+                        <li class="glide__slide">1</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <script src="scripts/skills.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 <script src="index.js"></script>
 <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"
 ></script>
+<script src="scripts/estudios.js"></script>
+<script src="scripts/glide.js"></script>
 </body>
 </html>
