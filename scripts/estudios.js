@@ -44,7 +44,7 @@ function htmlGenerator() {
                     <h5 class="card-subtitle text-muted">${estudio.lugar}</h5>
                     <hr>
                     <div style="display: flex">
-                        <img src="assets/Imágenes/calendario.png" class="me-1" width="17"><span style="font-size: 14px">${estudio.fecha}</span>
+                        <img src="assets/Imágenes/calendario.png" class="me-1" style="width:3vh; height: 3vh"><span style="font-size: 14px">${estudio.fecha}</span>
                         <span class="ms-auto badge bg-${estudio.style}">${estudio.type}</span>
                     </div>
                     <p class="card-text mt-2">${estudio.descripcion}</p>
