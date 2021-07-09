@@ -156,11 +156,11 @@ svg {
 footer {
 	-webkit-box-shadow: 0px 0px 6px 0px rgba(43, 43, 43, 0.51);
 	box-shadow: 0px 0px 6px 0px rgba(43, 43, 43, 0.51);
-	height: 20vh;
 	background-color: #040404;
 	text-align: center;
 	color: #a0a0a0;
 	padding-top: 20px;
+	padding-bottom: 20px;
 	margin-top: 5vh;
 }
 .socialicon {
