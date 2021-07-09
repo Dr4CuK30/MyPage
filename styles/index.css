@@ -152,3 +152,31 @@ svg {
 .spacer {
 	flex: 1 1 auto;
 }
+
+footer {
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(43, 43, 43, 0.51);
+	box-shadow: 0px 0px 6px 0px rgba(43, 43, 43, 0.51);
+	height: 20vh;
+	background-color: #040404;
+	text-align: center;
+	color: #a0a0a0;
+	padding-top: 20px;
+	padding-bottom: 150px;
+	margin-top: 40px;
+}
+.socialicon {
+	color: #3f3f3e;
+	font-size: 3em;
+	margin: 0 1vw 0 1vw;
+	padding: 10px;
+}
+.socialicon:hover {
+	color: rgb(184, 0, 0);
+}
+a {
+	text-decoration: none;
+}
+
+.social {
+	margin-bottom: 30px;
+}

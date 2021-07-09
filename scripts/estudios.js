@@ -30,6 +30,16 @@ var estudios = [
 		style: "primary",
 		fecha: "Cursando actualmente",
 	},
+	{
+		titulo: "Angular (Intermediate) Certificate",
+		lugar: "HackerRank",
+		url: "assets/Imágenes/educacion/Angular-Hack.png",
+		descripcion: `It covers topics like Routing, NgModules, Observables for data transmission and event handling, Dependency Injections, and APIs.`,
+		type: "Web",
+		style: "danger",
+		fecha: "Junio 2021",
+		diploma: "https://www.hackerrank.com/certificates/4907ea1e8da3",
+	},
 ];
 
 function htmlGenerator() {
@@ -37,7 +47,7 @@ function htmlGenerator() {
 	for (let estudio of estudios) {
 		html += `
         <li class="glide__slide">
-            <div class="card bg-dark">
+            <div class="card bg-p">
                 <img class="card-img-top" src="${estudio.url}" alt="${estudio.titulo}">
                 <div class="card-body">
                     <h4 class="card-title mt-2" style="font-weight: bold">${estudio.titulo}</h4>
@@ -51,7 +61,7 @@ function htmlGenerator() {
                 `;
 		if (estudio.diploma) {
 			html += `<div class="text-center">
-            <a href="${estudio.diploma}" target="_blank" class="btn btn-diploma">Ver diploma</a>
+            <a href="${estudio.diploma}" target="_blank" class="btn btn-diploma">Ver Certificado</a>
         </div>`;
 		}
 		html += `</div>
