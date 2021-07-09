@@ -5,7 +5,7 @@ var glideMulti1 = new Glide(".multi1", {
 window.addEventListener("resize", () => {
 	updateGlide();
 });
-eventscroll = document.addEventListener("scroll", eventscroll);
+document.addEventListener("scroll", eventscroll);
 
 function updateGlide() {
 	var config;
@@ -31,5 +31,5 @@ function updateGlide() {
 
 function eventscroll() {
 	updateGlide();
-	document.removeEventListener("scroll", eventscroll, true);
+	document.removeEventListener("scroll", eventscroll, false);
 }
