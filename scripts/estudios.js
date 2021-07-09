@@ -4,7 +4,7 @@ var estudios = [
 		lugar: "Universidad Nacional de Colombia",
 		url: "assets/Imágenes/educacion/DiplomadoUnal.png",
 		descripcion:
-			"Programa de conocimiento académico en habilidades de programación MISIÓN TIC 2022",
+			"Programa de conocimiento académico en habilidades de programación MISIÓN TIC 2022.",
 		type: "Programación",
 		style: "warning",
 		fecha: "Diciembre 2020",
